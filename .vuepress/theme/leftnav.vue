@@ -45,7 +45,6 @@
     data: ->
       fileName : ""
       data     : {}
-    created:->
 
     mounted:->
       window.addEventListener 'scroll', @onScroll
