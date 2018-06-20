@@ -1,6 +1,6 @@
 module.exports = {
   title : "Nanobox",
-  dest  : ".vuepress/dist",
+  dest  : "docs",
   head  : [
     ['script', { src:"https://use.typekit.net/cqd5kth.js" }],
     ['script', { content:"try{Typekit.load({ async: true });}catch(e){}" }]
