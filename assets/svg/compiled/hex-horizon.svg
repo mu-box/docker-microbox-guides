@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45.936 53.045" style="enable-background:new 0 0 45.936 53.045;" xml:space="preserve">
+<g id="hex-horizon_x60_46x54">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="22.968" y1="0.2418" x2="22.968" y2="26.4331">
+		<stop  offset="0" style="stop-color:#EB4B7A"/>
+		<stop  offset="1" style="stop-color:#F9B581"/>
+	</linearGradient>
+	<polygon style="fill:url(#SVGID_1_);" points="45.936,39.784 22.965,53.045 0,39.784 0,13.261 22.965,0 45.936,13.261 	"/>
+	<path style="fill:#FEFDEB;" d="M33.402,26.522H12.534c0-5.762,4.671-10.434,10.434-10.434S33.402,20.76,33.402,26.522z"/>
+	<polygon style="fill:#A5DCE4;" points="45.936,39.784 22.965,53.045 0,39.784 0,26.522 45.936,26.522 	"/>
+	<path style="fill:#5DB3C6;" d="M0,26.522h45.936v2.067c0,0-2.239,3.839-8.957,4.651c-6.718,0.812-12.874,0.703-12.874,2.031
+		c0,1.586,6.968,1.586,6.968,3.21c0,3.937-22.774,6.094-22.774,6.094L0,39.784V26.522z"/>
+</g>
+</svg>
