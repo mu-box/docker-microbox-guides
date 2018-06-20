@@ -1,6 +1,6 @@
 module.exports = {
   title : "Nanobox",
-  dest  : "docs",
+  dest  : ".build",
   head  : [
     ['script', { src:"https://use.typekit.net/cqd5kth.js" }],
     ['script', { content:"try{Typekit.load({ async: true });}catch(e){}" }]
