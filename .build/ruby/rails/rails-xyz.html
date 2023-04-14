@@ -7,19 +7,19 @@
     <meta name="description" content="">
     <script src="https://use.typekit.net/cqd5kth.js"></script>
   <script content="try{Typekit.load({ async: true });}catch(e){}"></script>
-    
+
     <link rel="preload" href="/assets/css/0.styles.fdef330d.css" as="style"><link rel="preload" href="/assets/js/app.12bc18c5.js" as="script"><link rel="preload" href="/assets/js/3.d31825fa.js" as="script"><link rel="prefetch" href="/assets/js/1.c6d6e27a.js"><link rel="prefetch" href="/assets/js/2.4f038127.js"><link rel="prefetch" href="/assets/js/4.91f3e1bd.js"><link rel="prefetch" href="/assets/js/5.38318318.js"><link rel="prefetch" href="/assets/js/6.f6641065.js"><link rel="prefetch" href="/assets/js/7.f87b1eb5.js"><link rel="prefetch" href="/assets/js/8.8639d8f4.js">
     <link rel="stylesheet" href="/assets/css/0.styles.fdef330d.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="nanobox"><div class="metahead" data-v-599df11e></div><div class="doc page"><div class="left"><div class="left-nav"></div></div><div class="main"><div class="breadcrumbs"></div><div class="content custom"><h1 id="rails-xyz"><a href="#rails-xyz" aria-hidden="true" class="header-anchor">#</a> Rails XYZ</h1><p><a href="/" class="router-link-active">Home</a> asdf
-Part of what makes Nanobox so useful is you don't even need Ruby or Rails installed on your local machine to use them.</p><h2 id="heads-up"><a href="#heads-up" aria-hidden="true" class="header-anchor">#</a> Heads up</h2><p><strong>HEADS UP</strong>: All <code>nanobox</code> commands <em>must</em> be run from within your project folder.</p><h3 id="add-a-boxfile-yml"><a href="#add-a-boxfile-yml" aria-hidden="true" class="header-anchor">#</a> Add a boxfile.yml</h3><p>Nanobox uses a <a href="https://docs.nanobox.io/boxfile/" target="\_blank">boxfile.yml</a> to configure your app's environment.</p><p>At the root of your project create a <code>boxfile.yml</code> telling Nanobox you want to use the Ruby <a href="https://docs.nanobox.io/engines/" target="\_blank">engine</a>:</p><pre class="language-yaml"><code><span class="token key atrule">run.config</span><span class="token punctuation">:</span>
+    <div id="app" data-server-rendered="true"><div class="microbox"><div class="metahead" data-v-599df11e></div><div class="doc page"><div class="left"><div class="left-nav"></div></div><div class="main"><div class="breadcrumbs"></div><div class="content custom"><h1 id="rails-xyz"><a href="#rails-xyz" aria-hidden="true" class="header-anchor">#</a> Rails XYZ</h1><p><a href="/" class="router-link-active">Home</a> asdf
+Part of what makes Microbox so useful is you don't even need Ruby or Rails installed on your local machine to use them.</p><h2 id="heads-up"><a href="#heads-up" aria-hidden="true" class="header-anchor">#</a> Heads up</h2><p><strong>HEADS UP</strong>: All <code>microbox</code> commands <em>must</em> be run from within your project folder.</p><h3 id="add-a-boxfile-yml"><a href="#add-a-boxfile-yml" aria-hidden="true" class="header-anchor">#</a> Add a boxfile.yml</h3><p>Microbox uses a <a href="https://docs.microbox.cloud/boxfile/" target="\_blank">boxfile.yml</a> to configure your app's environment.</p><p>At the root of your project create a <code>boxfile.yml</code> telling Microbox you want to use the Ruby <a href="https://docs.microbox.cloud/engines/" target="\_blank">engine</a>:</p><pre class="language-yaml"><code><span class="token key atrule">run.config</span><span class="token punctuation">:</span>
   <span class="token key atrule">engine</span><span class="token punctuation">:</span> ruby
 
   <span class="token key atrule">extra_packages</span><span class="token punctuation">:</span>
     <span class="token punctuation">-</span> nodejs
-</code></pre><h2 id="generate-a-rails-app"><a href="#generate-a-rails-app" aria-hidden="true" class="header-anchor">#</a> Generate a Rails App</h2><pre class="language-bash"><code><span class="token comment"># drop into a nanobox console</span>
-nanobox run
+</code></pre><h2 id="generate-a-rails-app"><a href="#generate-a-rails-app" aria-hidden="true" class="header-anchor">#</a> Generate a Rails App</h2><pre class="language-bash"><code><span class="token comment"># drop into a microbox console</span>
+microbox run
 
 <span class="token comment"># install the rails gem so we can use it to generate our app</span>
 gem <span class="token function">install</span> rails
@@ -38,10 +38,10 @@ rails new <span class="token keyword">.</span>
     <span class="token keyword">end</span>
   <span class="token keyword">end</span>
 <span class="token keyword">end</span>
-</code></pre><h2 id="add-a-local-dns"><a href="#add-a-local-dns" aria-hidden="true" class="header-anchor">#</a> Add a local DNS</h2><p>Add a convenient way to access your app from the browser:</p><pre class="language-bash"><code>nanobox dns add local rails.dev
-</code></pre><h2 id="run-the-app"><a href="#run-the-app" aria-hidden="true" class="header-anchor">#</a> Run the app</h2><pre class="language-bash"><code>nanobox run rails s
-</code></pre><p>Visit your app at <a href="http://rails.dev:3000" target="\_blank">rails.dev:3000</a></p><h2 id="explore"><a href="#explore" aria-hidden="true" class="header-anchor">#</a> Explore</h2><p>With Nanobox, you have everything you need develop and run your Rails app:</p><pre class="language-bash"><code><span class="token comment"># drop into a Nanobox console</span>
-nanobox run
+</code></pre><h2 id="add-a-local-dns"><a href="#add-a-local-dns" aria-hidden="true" class="header-anchor">#</a> Add a local DNS</h2><p>Add a convenient way to access your app from the browser:</p><pre class="language-bash"><code>microbox dns add local rails.dev
+</code></pre><h2 id="run-the-app"><a href="#run-the-app" aria-hidden="true" class="header-anchor">#</a> Run the app</h2><pre class="language-bash"><code>microbox run rails s
+</code></pre><p>Visit your app at <a href="http://rails.dev:3000" target="\_blank">rails.dev:3000</a></p><h2 id="explore"><a href="#explore" aria-hidden="true" class="header-anchor">#</a> Explore</h2><p>With Microbox, you have everything you need develop and run your Rails app:</p><pre class="language-bash"><code><span class="token comment"># drop into a Microbox console</span>
+microbox run
 
 <span class="token comment"># where ruby is installed,</span>
 ruby -v

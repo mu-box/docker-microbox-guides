@@ -71,7 +71,7 @@
         .txt C
 
     .other-links
-      a(href="//docs.nanobox.io")
+      a(href="//docs.microbox.cloud")
         img.hand(src="~@svgs/docs-hand.svg")
         .txt Comprehensive<br/>Documentation
       a(href="/components")

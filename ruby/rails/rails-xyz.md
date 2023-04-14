@@ -6,17 +6,17 @@ nav: ruby-rails
 # Rails XYZ
 
 [Home](/) asdf
-Part of what makes Nanobox so useful is you don't even need Ruby or Rails installed on your local machine to use them.
+Part of what makes Microbox so useful is you don't even need Ruby or Rails installed on your local machine to use them.
 
 
 ## Heads up
 
-**HEADS UP**: All `nanobox` commands *must* be run from within your project folder.
+**HEADS UP**: All `microbox` commands *must* be run from within your project folder.
 
 ### Add a boxfile.yml
-Nanobox uses a <a href="https://docs.nanobox.io/boxfile/" target="\_blank">boxfile.yml</a> to configure your app's environment.
+Microbox uses a <a href="https://docs.microbox.cloud/boxfile/" target="\_blank">boxfile.yml</a> to configure your app's environment.
 
-At the root of your project create a `boxfile.yml` telling Nanobox you want to use the Ruby <a href="https://docs.nanobox.io/engines/" target="\_blank">engine</a>:
+At the root of your project create a `boxfile.yml` telling Microbox you want to use the Ruby <a href="https://docs.microbox.cloud/engines/" target="\_blank">engine</a>:
 
 ```yaml
 run.config:
@@ -29,8 +29,8 @@ run.config:
 ## Generate a Rails App
 
 ```bash
-# drop into a nanobox console
-nanobox run
+# drop into a microbox console
+microbox run
 
 # install the rails gem so we can use it to generate our app
 gem install rails
@@ -63,23 +63,23 @@ end
 Add a convenient way to access your app from the browser:
 
 ```bash
-nanobox dns add local rails.dev
+microbox dns add local rails.dev
 ```
 
 ## Run the app
 
 ```bash
-nanobox run rails s
+microbox run rails s
 ```
 
 Visit your app at <a href="http://rails.dev:3000" target="\_blank">rails.dev:3000</a>
 
 ## Explore
-With Nanobox, you have everything you need develop and run your Rails app:
+With Microbox, you have everything you need develop and run your Rails app:
 
 ```bash
-# drop into a Nanobox console
-nanobox run
+# drop into a Microbox console
+microbox run
 
 # where ruby is installed,
 ruby -v
