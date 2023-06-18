@@ -8,13 +8,13 @@ nav: ruby-rails
 [Home](/) asdf
 
 ```docker
-FROM nanobox/runit
+FROM mubox/base
 
 # Create directories
 RUN mkdir -p \
-  /var/log/gonano \
-  /var/nanobox \
-  /opt/nanobox/hooks
+  /var/log/gomicro \
+  /var/microbox \
+  /opt/microbox/hooks
 
 # Install nfs client
 RUN apt-get update -qq && \
@@ -27,41 +27,41 @@ RUN apt-get update -qq && \
 RUN rm -rf /data && \
     mkdir -p /data
 
-RUN /opt/gonano/bin/gem install remote_syslog_logger
+RUN /opt/gomicro/bin/gem install remote_syslog_logger
 
 # Install hooks
 RUN curl \
       -f \
       -k \
-      https://s3.amazonaws.com/tools.nanobox.io/hooks/code-stable.tgz \
-        | tar -xz -C /opt/nanobox/hooks
+      https://s3.amazonaws.com/tools.microbox.cloud/hooks/code-stable.tgz \
+        | tar -xz -C /opt/microbox/hooks
 
 # Download hooks md5 (used to perform updates)
 RUN curl \
       -f \
       -k \
-      -o /var/nanobox/hooks.md5 \
-      https://s3.amazonaws.com/tools.nanobox.io/hooks/code-stable.md5
+      -o /var/microbox/hooks.md5 \
+      https://s3.amazonaws.com/tools.microbox.cloud/hooks/code-stable.md5
 
 WORKDIR /app
 
 # Run runit automatically
-CMD [ "/opt/gonano/bin/nanoinit" ]
+CMD [ "/opt/gomicro/bin/microinit" ]
 ```
 
 ## Create a Rails project
 Create a project folder and change into it:
 
 ```bash
-mkdir nanobox-rails && cd nanobox-rails
+mkdir microbox-rails && cd microbox-rails
 ```
 
-**HEADS UP**: All `nanobox` commands *must* be run from within your project folder.
+**HEADS UP**: All `microbox` commands *must* be run from within your project folder.
 
 ### Add a boxfile.yml
-Nanobox uses a <a href="https://docs.nanobox.io/boxfile/" target="\_blank">boxfile.yml</a> to configure your app's environment.
+Microbox uses a <a href="https://docs.microbox.cloud/boxfile/" target="\_blank">boxfile.yml</a> to configure your app's environment.
 
-At the root of your project create a `boxfile.yml` telling Nanobox you want to use the Ruby <a href="https://docs.nanobox.io/engines/" target="\_blank">engine</a>:
+At the root of your project create a `boxfile.yml` telling Microbox you want to use the Ruby <a href="https://docs.microbox.cloud/engines/" target="\_blank">engine</a>:
 
 ```yaml
 run.config:
@@ -74,8 +74,8 @@ run.config:
 ## Generate a Rails App
 
 ```bash
-# drop into a nanobox console
-nanobox run
+# drop into a microbox console
+microbox run
 
 # install the rails gem so we can use it to generate our app
 gem install rails
@@ -108,23 +108,23 @@ end
 Add a convenient way to access your app from the browser:
 
 ```bash
-nanobox dns add local rails.dev
+microbox dns add local rails.dev
 ```
 
 ## Run the app
 
 ```bash
-nanobox run rails s
+microbox run rails s
 ```
 
 Visit your app at <a href="http://rails.dev:3000" target="\_blank">rails.dev:3000</a>
 
 ## Explore
-With Nanobox, you have everything you need develop and run your Rails app:
+With Microbox, you have everything you need develop and run your Rails app:
 
 ```bash
-# drop into a Nanobox console
-nanobox run
+# drop into a Microbox console
+microbox run
 
 # where ruby is installed,
 ruby -v

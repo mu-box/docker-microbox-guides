@@ -21,8 +21,8 @@
           .option
             router-link.prod(to="/ruby/rails/rails-abc.html")
               img(src="~@svgs/production.svg")
-              .title Live in production<br/>via Nanobox
-            .blurb Run, scale and manage Ruby on Rails in production with Nanobox.
+              .title Live in production<br/>via Microbox
+            .blurb Run, scale and manage Ruby on Rails in production with Microbox.
 </template>
 
 <style lang="scss">
@@ -76,9 +76,9 @@
           }
           p         {display: flex; flex-direction: column;}
           a         {font-style:italic; color:#0079D6; font-size:15px; font-weight: $semibold; padding:2px 0;}
-          &.nanobox,
+          &.microbox,
           &.compose {
-            &:after {color:#7F94B8; font-size:$medium; font-size:14px; content:"Via Nanobox"; margin-top:auto; }
+            &:after {color:#7F94B8; font-size:$medium; font-size:14px; content:"Via Microbox"; margin-top:auto; }
           }
           &.compose {
             &:after {content:"Via Docker Compose"}

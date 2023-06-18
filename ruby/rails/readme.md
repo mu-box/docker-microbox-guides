@@ -13,7 +13,7 @@ framework:
 
 </div>
 
-<div class="group nanobox">
+<div class="group microbox">
 
 ## Production
 [Example Link](/ruby/)

@@ -9,13 +9,13 @@
   import metahead  from './metahead'
 
   export default
-    name: 'nanobox'
+    name: 'microbox'
     components : {doc, metahead, language, framework, home}
 
 </script>
 
 <template lang="pug">
-  .nanobox
+  .microbox
     metahead
     language(v-if="$page.frontmatter.kind == 'language'" )
     framework(v-else-if="$page.frontmatter.kind == 'framework'" )
@@ -25,5 +25,5 @@
 
 <style lang="scss">
   @import './scss/base';
-  .nanobox {}
+  .microbox {}
 </style>

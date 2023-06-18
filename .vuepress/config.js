@@ -1,5 +1,5 @@
 module.exports = {
-  title : "Nanobox",
+  title : "Microbox",
   dest  : ".build",
   head  : [
     ['script', { src:"https://use.typekit.net/cqd5kth.js" }],
